@@ -1,0 +1,2134 @@
+@import "bourbon";
+@import "susy";
+@import _map.scss
+
+
+
+// shorthand
+$desktop: 12 (80px 30px) split
+$pad: 6 (80px 40px) split
+
+$w_desktop: 12 split
+$w_pad: 6 split
+
+$breakpoint_desktop: 991px
+$breakpoint_pad: 0 990px
+
+$susy: (debug: (image: hide))
+
+
+
+
+
+$deep-green: #190
+$green: #190
+
+.indside_banner
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		background-size: cover
+		height: 200px
+		display: flex
+		justify-content: center
+		align-items: center
+		h2
+			color: #7ED321
+			font-size: 20px
+			text-align: center
+
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		background-size: cover
+		height: 350px
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 50px
+		h2
+			color: #7ED321
+			font-size: 40px
+			text-align: center
+
+
+
+.pages
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		width: 100%
+		margin-top: 10px
+		margin-bottom: 30px
+		margin-top: 30px
+		display: flex
+		justify-content: center
+		align-items: center
+		a
+			display: block
+			width: 30px
+			height: 30px
+			border: 1px solid #eee
+			font-size: 14px
+			margin: 0 5px
+			display: flex
+			justify-content: center
+			align-items: center
+			transition: all .3s
+			&:hover
+				border: 1px solid #eee
+				background: $deep_green
+				color: #FFF
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		width: 100%
+		margin-bottom: 50px
+		margin-top: 30px
+		display: flex
+		justify-content: center
+		align-items: center
+		a
+			display: block
+			width: 30px
+			height: 30px
+			border: 1px solid #eee
+			font-size: 14px
+			margin: 0 5px
+			display: flex
+			justify-content: center
+			align-items: center
+			transition: all .3s
+			&:hover
+				border: 1px solid #eee
+				background: $deep_green
+				color: #FFF
+
+
+
+.main_content
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		.aside
+			+span(6)
+			padding: 0 20px
+			margin: 40px 0
+
+		.content
+			+span(6)
+			padding: 0 20px
+
+		.search_result
+			+span(6)
+			padding: 0 20px
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		padding: 0 30px
+		.aside
+			+span(3)
+			padding: 0 20px
+
+		.content
+			+span(9)
+			padding: 0 20px
+
+		.search_result
+			+span(12)
+			padding: 0 20px
+
+
+
+.about_menu
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		margin-bottom: 50px
+		margin-top: 30px
+		ul
+			li
+				a
+					display: block
+					border-bottom: 1px solid #eee
+					padding: 15px 0
+					transition: all .3s
+					&:hover
+						color: $deep-green
+						transform: scale(1.1)
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		ul
+			li
+				a
+					display: block
+					border-bottom: 1px solid #eee
+					padding: 5px 0
+					transition: all .3s
+					&:hover
+						color: $deep-green
+						transform: scale(1.1)
+
+
+
+
+
+
+.about_content
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		section
+			border-bottom: 1px solid #eee
+			padding-bottom: 20px
+			margin-bottom: 40px
+			img
+				display: block
+				width: 500px
+				margin-bottom: 20px
+			h6
+				font-size: 30px
+				color: $green
+				margin-bottom: 30px
+				font-weight: 700
+			p
+				font-size: 16px
+				color: #888
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		section
+			border-bottom: 1px solid #eee
+			padding-bottom: 20px
+			margin-bottom: 40px
+			img
+				display: block
+				float: right
+				width: 500px
+			h6
+				font-size: 30px
+				color: $green
+				margin-bottom: 30px
+				font-weight: 700
+			p
+				font-size: 16px
+				color: #888
+
+
+
+
+.product_menu
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		.product_title
+			background: $deep-green
+			color: #FFF
+			padding: 15px 25px
+			font-size: 18px
+			font-weight: 700
+			border-bottom: 2px solid #FFF
+			cursor: pointer
+			transition: all .3s
+			&:hover
+				transform: scale(1.05)
+
+		.product_list
+			padding: 0 5px
+			display: none
+
+			ul
+				li
+					a
+						display: block
+						font-size: 16px
+						padding: 10px 20px
+						border-bottom: 1px solid #FFF
+						line-height: 1.4
+						background: #EDF9E7
+						color: #656565
+						transition: all .2s
+						&:hover
+							background: #222
+							color: #FFF
+							transform: scale(1.05)
+							border-bottom: 1px solid #222
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		.product_title
+			background: $deep-green
+			color: #FFF
+			padding: 15px 25px
+			font-size: 18px
+			font-weight: 700
+			border-bottom: 2px solid #FFF
+			cursor: pointer
+			transition: all .3s
+			&:hover
+				transform: scale(1.05)
+
+		.product_list
+			padding: 0 5px
+			display: none
+
+			ul
+				li
+					a
+						display: block
+						font-size: 16px
+						padding: 10px 20px
+						border-bottom: 1px solid #FFF
+						line-height: 1.4
+						background: #EDF9E7
+						color: #656565
+						transition: all .2s
+						&:hover
+							background: #222
+							color: #FFF
+							transform: scale(1.05)
+							border-bottom: 1px solid #222
+
+
+
+.display_down
+	display: block !important
+
+
+
+
+
+.product_block
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		padding: 30px 0
+		margin-bottom: 20px
+		border-bottom: 1px solid #eee
+		.product_photo
+			width: 400px
+			margin-right: 20px
+			img
+				display: block
+				width: 100%
+				margin-bottom: 20px
+
+		.product_info
+			h6
+				font-size: 30px
+				color: $deep_green
+				margin-bottom: 20px
+			p
+				font-size: 18px
+
+			.spec
+				margin-top: 20px
+				p
+					font-size: 16px
+					color: #888
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: flex-start
+		padding: 30px 0
+		margin-bottom: 20px
+		border-bottom: 1px solid #eee
+		.product_photo
+			width: 400px
+			margin-right: 20px
+			img
+				display: block
+				width: 100%
+
+		.product_info
+			h6
+				font-size: 30px
+				color: $deep_green
+				margin-bottom: 20px
+			p
+				font-size: 18px
+
+			.spec
+				margin-top: 20px
+				p
+					font-size: 16px
+					color: #888
+
+
+
+.product_detail
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		padding: 30px 20px
+		margin-bottom: 20px
+
+		.product_wrapper
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: flex-start
+			border-bottom: 1px solid #eee
+			margin-bottom: 40px
+			.product_photo
+				width: 800px
+				margin-right: 20px
+				img
+					display: block
+					width: 100%
+
+			.product_info
+				h6
+					font-size: 30px
+					color: $deep_green
+					margin-bottom: 20px
+				p
+					font-size: 18px
+
+				.spec
+					margin-top: 20px
+					margin-bottom: 30px
+					p
+						font-size: 16px
+						color: #888
+		.contact_us
+			display: block
+			width: 200px
+			height: 45px
+			margin-top: 40px
+			margin-bottom: 40px
+			background: #E6EFE2
+			color: $deep_green
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			transition: all .3s
+			&:hover
+				background: #222
+				color: #FFF
+		.pdf_download
+			display: block
+			width: 70px
+			margin-bottom: 30px
+			transition: all .3s
+			&:hover
+				transform: scale(1.05)
+
+		.specification
+			h6
+				font-size: 18px
+				color: $deep_green
+				margin-bottom: 5px
+				margin-top: 20px
+			p
+				font-size: 16px
+				color: #888
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		padding: 30px 0
+		margin-bottom: 20px
+
+		.product_wrapper
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: flex-start
+			border-bottom: 1px solid #eee
+			margin-bottom: 40px
+			.product_photo
+				width: 800px
+				margin-right: 20px
+				img
+					display: block
+					width: 100%
+
+			.product_info
+				h6
+					font-size: 30px
+					color: $deep_green
+					margin-bottom: 20px
+				p
+					font-size: 18px
+
+				.spec
+					margin-top: 20px
+					margin-bottom: 30px
+					p
+						font-size: 16px
+						color: #888
+		.contact_us
+			display: block
+			width: 200px
+			height: 45px
+			margin-top: 40px
+			margin-bottom: 40px
+			background: #E6EFE2
+			color: $deep_green
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			transition: all .3s
+			&:hover
+				background: #222
+				color: #FFF
+		.pdf_download
+			display: block
+			width: 70px
+			margin-bottom: 30px
+			transition: all .3s
+			&:hover
+				transform: scale(1.05)
+
+		.specification
+			h6
+				font-size: 18px
+				color: $deep_green
+				margin-bottom: 5px
+				margin-top: 20px
+			p
+				font-size: 16px
+				color: #888
+
+
+
+
+
+
+
+
+.simple-search
+
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		.search_area
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			margin-bottom: 20px
+			p
+				font-size: 16px
+				color: #888
+				margin-right: 10px
+			input[type=text]
+				width: 70%
+				padding: 0px 10px
+				height: 40px
+				margin-right: 8px
+				&::placeholder
+					color: #c0c0c0
+					font-size: 14px
+			select
+				width: 10%
+				height: 40px
+				padding: 5px 25px
+				font-size: 14px
+				border: 1px solid #e6e6e6
+				color: #999
+				background-color: #fff
+				border-radius: 0
+				outline: none
+				margin-left: 1%
+				// appearance: none
+
+		.select_area
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			margin-bottom: 30px
+			p
+				font-size: 16px
+				color: #888
+				margin-right: 10px
+			select
+				width: 150px
+				margin-right: 8px
+				height: 30px
+				font-size: 14px
+				color: #888
+
+		.seach_type
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			margin-bottom: 20px
+			.seach_type_item
+				margin-right: 20px
+				font-size: 16px
+				color: #888
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				input[type=checkbox]
+					margin-right: 8px
+		.submit
+			width: 200px
+			height: 40px
+			background: #222
+			display: flex
+			justify-content: center
+			align-items: center
+			color: #FFF
+			border-radius: 3px
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		padding: 40px
+		background: #FFF
+
+		.search_area
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			margin-bottom: 20px
+			p
+				font-size: 16px
+				color: #888
+				margin-right: 10px
+			input[type=text]
+				width: 70%
+				padding: 0px 10px
+				height: 40px
+				margin-right: 8px
+				&::placeholder
+					color: #c0c0c0
+					font-size: 14px
+			select
+				width: 10%
+				height: 40px
+				padding: 5px 25px
+				font-size: 14px
+				border: 1px solid #e6e6e6
+				color: #999
+				background-color: #fff
+				border-radius: 0
+				outline: none
+				margin-left: 1%
+				// appearance: none
+
+		.select_area
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			margin-bottom: 30px
+			p
+				font-size: 16px
+				color: #888
+				margin-right: 10px
+			select
+				width: 150px
+				margin-right: 8px
+				height: 30px
+				font-size: 14px
+				color: #888
+
+		.seach_type
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			margin-bottom: 20px
+			.seach_type_item
+				margin-right: 20px
+				font-size: 16px
+				color: #888
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				input[type=checkbox]
+					margin-right: 8px
+		.submit
+			width: 200px
+			height: 40px
+			background: #222
+			display: flex
+			justify-content: center
+			align-items: center
+			color: #FFF
+			border-radius: 3px
+
+
+
+
+
+$desktop_works: 12 (60px 40px) split
+$pad_works: 6 (70px 40px) split
+
+
+$self_yellow: #dee100
+
+
+.works_wrapper
+	+susy-breakpoint($breakpoint_pad, $pad_works)
+		+container
+		padding: 20px
+
+	+susy-breakpoint($breakpoint_desktop, $desktop_works)
+		+container
+		padding: 20px 20px 20px 90px
+
+.is-checked
+	color: #dee100 !important
+	text-decoration: underline
+
+.works_fun_section
+	+susy-breakpoint($breakpoint_pad, $pad_works)
+		+container
+		.woks_filter
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			margin-top: 100px
+			width: 100%
+			.works_menu
+				width: 100%
+				display: flex
+				flex-direction: row
+				flex-wrap: wrap
+				justify-content: center
+				align-items: center
+				// height: 50px
+				.filter_button_item
+					font-size: 15px
+					color: #000
+					margin-right: 15px
+					margin-left: 15px
+					cursor: pointer
+					transition: all .2s
+					&:hover
+						color: $self_yellow
+				ul
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					li
+						a
+							font-size: 15px
+							color: #000
+							margin-right: 33px
+							&:hover
+								color: $self_yellow
+
+			.works_search
+				display: none
+
+				width: 300px
+				i
+					color: #222
+				input[type="text"]
+					height: 40px
+					border: none
+					border-bottom: 2px solid #222
+					background: none
+					outline: none
+					&::placeholder
+						color: #4a4a4a
+						font-size: 15px
+						letter-spacing: 3px
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop_works)
+		+container
+		.woks_filter
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+			margin-top: 100px
+
+			.works_menu
+				display: flex
+				flex-direction: row
+				justify-content: flex-start
+				align-items: center
+				height: 50px
+				.filter_button_item
+					font-size: 15px
+					color: #000
+					margin-right: 33px
+					cursor: pointer
+					transition: all .2s
+					&:hover
+						color: $self_yellow
+						text-decoration-line: underline
+						// text-decoration-color: #000
+				ul
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					li
+						a
+							font-size: 15px
+							color: #000
+							margin-right: 33px
+							&:hover
+								color: $self_yellow
+
+			.works_search
+				display: block
+
+				width: 300px
+				i
+					color: #222
+				input[type="text"]
+					height: 40px
+					border: none
+					border-bottom: 2px solid #222
+					background: none
+					outline: none
+					&::placeholder
+						color: #4a4a4a
+						font-size: 15px
+						letter-spacing: 3px
+
+
+
+.works_list_section
+	+susy-breakpoint($breakpoint_pad, $pad_works)
+		+container
+		margin-top: 60px
+		.works_list_wrapper
+			margin: 0 auto
+			margin-top: 40px
+			width: 90%
+			.element_item
+				width: 100%
+				// position: relative
+				margin-right: 0%
+				margin-bottom: 60px
+				color: #262524
+				.works_block
+					.pic
+						margin-bottom: 3px
+						img
+							display: block
+							margin-bottom: 0
+
+					.works_des
+						padding: 10px 14px
+						h5
+							font-size: 12px
+							margin-bottom: 10px
+						h6
+							font-size: 25px
+							// font-family: ‘cwTeXMing’, serif
+							font-weight: 400
+							margin-bottom: 10px
+							line-height: 1.2
+						p
+							font-size: 12px
+							color: #888787
+							font-weight: 200
+						.arrow_right
+							float: right
+							font-size: 21px
+							color: $this_yellow
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop_works)
+		+container
+		.works_list_wrapper
+			// display: flex
+			// flex-direction: row
+			// flex-wrap: wrap
+			// justify-content: space-between
+			// align-items: center
+			margin-top: 80px
+			// display: grid
+			// grid-gap: 50px 60px
+			// grid-template-columns: auto auto auto
+			.element_item
+				width: 30%
+				// position: relative
+				// float: left
+				// height: 100px
+				// margin: 5px
+				margin-right: 3%
+				margin-bottom: 120px
+				color: #262524
+
+				// &:nth-child(3n+3)
+				// 	margin-right: 0
+					// border: 2px solid $self_yellow
+				.works_block
+					cursor: pointer
+					transition: all .3s
+					height: 430px
+					&:hover
+						transform: scale(1.02)
+					.pic
+						margin-bottom: 3px
+						img
+							display: block
+							// margin-bottom: 0
+
+					.works_des
+						padding: 10px 14px
+						h5
+							font-size: 12px
+							margin-bottom: 10px
+						h6
+							font-size: 25px
+							// font-family: ‘cwTeXMing’, serif
+							font-weight: 400
+							margin-bottom: 10px
+							line-height: 1.2
+						p
+							font-size: 12px
+							color: #888787
+							font-weight: 200
+						.arrow_right
+							width: 23px
+							float: right
+							font-size: 21px
+							color: $this_yellow
+							// background: #299
+
+
+
+
+
+
+
+
+
+.contact_us_page
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		padding: 0 20px
+		margin-top: 150px
+		margin-bottom: 160px
+		h3
+			font-size: 15px
+			color: #000
+			margin-bottom: 10px
+			text-align: center
+			letter-spacing: 3px
+		h2
+			font-size: 25px
+			color: #000
+			// font-family: ‘cwTeXMing’, serif
+			margin-bottom: 20px
+			font-weight: 300
+			text-align: center
+			letter-spacing: 3px
+		.slash-y
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			img
+				display: block
+				width: 85px
+
+		.contact_info_bg
+			background: rgba(0,0,0,.7)
+			padding: 6px
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+
+			.contact_info
+				width: 100%
+				padding-top: 80px
+				background: #FFF
+				border-radius: 27px
+				overflow: hidden
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				.info_row
+					width: 90%
+					display: flex
+					flex-direction: row
+					justify-content: flex-start
+					align-items: flex-start
+					margin-bottom: 18px
+					p
+						color: #000
+						margin: 0px 0px
+						font-size: 15px
+						span
+							margin-right: 20px
+					a
+						color: #000
+				.google-map
+					width: 100%
+					height: 500px
+					margin-top: 90px
+					background: rgba(0,0,0,.7)
+					iframe
+						width: 100%
+						height: 500px
+				.mr-30
+					width: 70px
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		padding: 0 20px
+		margin-top: 100px
+		margin-bottom: 160px
+		padding-left: 90px
+		h3
+			font-size: 15px
+			color: #000
+			margin-bottom: 10px
+			text-align: center
+			letter-spacing: 3px
+		h2
+			font-size: 25px
+			color: #000
+			// font-family: ‘cwTeXMing’, serif
+			margin-bottom: 20px
+			font-weight: 300
+			text-align: center
+			letter-spacing: 3px
+		.slash-y
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			img
+				display: block
+				width: 205px
+
+		.contact_info_bg
+			background: rgba(0,0,0,.7)
+			padding: 1px
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+
+			.contact_info
+				width: 100%
+				padding-top: 80px
+
+				background: #FFF
+				border-radius: 27px
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				overflow: hidden
+				.info_row
+					width: 40%
+					display: flex
+					flex-direction: row
+					justify-content: flex-start
+					align-items: flex-start
+					margin-bottom: 18px
+					margin-left: 150px
+					p
+						color: #000
+						margin: 0px 0px
+						font-size: 20px
+					a
+						color: #000
+				.google-map
+					width: 100%
+					height: 500px
+					margin-top: 90px
+					background: rgba(0,0,0,.7)
+					iframe
+						width: 100%
+						height: 500px
+					img
+						display: block
+
+				.mr-30
+					width: 100px
+
+
+
+
+// portfolio layout
+
+$portfolio_desktop: 12 (70px 25px) split
+$portfolio_pad: 6 (80px 40px) split
+
+
+
+
+
+.layout_a_description_bg
+	+susy-breakpoint($breakpoint_pad, $portfolio_pad)
+		+container
+		background: rgba(0,0,0,.7)
+		padding: 1px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		margin-bottom: 150px
+		margin-top: 30px
+		.layout_a_description
+			width: 100%
+			background: #FFF
+			border-radius: 27px
+			padding: 80px 20px 0 20px
+			.d-line
+				width: 30%
+				height: 1px
+				background: #000
+				margin: 60px auto
+			h4
+				color: #000
+				text-align: center
+				font-size: 28px
+				letter-spacing: 3px
+
+			h6
+				color: #000
+				font-size: 17px
+				letter-spacing: 2px
+				margin-bottom: 50px
+
+			p
+				color: #4a4a4a
+				margin-bottom: 40px
+				font-size: 15px
+				letter-spacing: 2px
+		.goback
+			display: block
+			height: 40px
+			width: 80px
+			margin: 0 auto
+			margin-top: 120px
+			border-top-left-radius: 80px
+			border-top-right-radius: 80px
+			background: #dee100
+			color: #000
+			font-size: 13px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			padding-top: 15px
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $portfolio_desktop)
+		+container
+		background: rgba(0,0,0,.7)
+		padding: 1px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		margin-bottom: 150px
+		margin-top: 30px
+
+
+		.layout_a_description
+			width: 100%
+			background: #FFF
+			border-radius: 27px
+			padding: 80px 15% 0 15%
+			.d-line
+				width: 30%
+				height: 1px
+				background: #000
+				margin: 80px auto
+			h4
+				color: #000
+				text-align: center
+				font-size: 28px
+				letter-spacing: 3px
+
+			h6
+				color: #000
+				font-size: 17px
+				letter-spacing: 2px
+				margin-bottom: 50px
+
+			p
+				color: #4a4a4a
+				margin-bottom: 40px
+				font-size: 15px
+				letter-spacing: 2px
+		.goback
+			display: block
+			height: 40px
+			width: 80px
+			margin: 0 auto
+			margin-top: 120px
+			border-top-left-radius: 80px
+			border-top-right-radius: 80px
+			background: #dee100
+			color: #000
+			font-size: 13px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			padding-top: 15px
+
+
+
+
+
+
+
+
+
+.portfolio_layout_publish
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		padding: 0 20px
+		margin-top: 130px
+		.this_project
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: flex-start
+			.this_image
+				width: 100%
+				margin-bottom: 40px
+			.this_description
+				width: 100%
+				padding-left: 20px
+				margin-right: 20px
+				.d-line
+					width: 30%
+					height: 1px
+					background: #000
+					margin: 40px auto
+
+				h4
+					color: #000
+					text-align: center
+					font-size: 30px
+					letter-spacing: 3px
+
+				h6
+					color: #000
+					font-size: 20px
+					letter-spacing: 2px
+					margin-bottom: 50px
+
+				p
+					color: #4a4a4a
+					margin-bottom: 40px
+					font-size: 15px
+					letter-spacing: 2px
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		margin-top: 100px
+		padding-left: 90px
+		.this_project
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: flex-start
+			.this_image
+				width: 70%
+			.this_description
+				width: 30%
+				padding-left: 30px
+				margin-right: 10px
+				.d-line
+					width: 30%
+					height: 1px
+					background: #000
+					margin: 40px auto
+
+				h4
+					color: #000
+					text-align: center
+					font-size: 30px
+					letter-spacing: 3px
+
+				h6
+					color: #000
+					font-size: 20px
+					letter-spacing: 2px
+					margin-bottom: 50px
+
+				p
+					color: #4a4a4a
+					margin-bottom: 40px
+					font-size: 15px
+					letter-spacing: 2px
+
+
+
+
+
+// portfolio_layout
+.portfolio_layout_module
+	+susy-breakpoint($breakpoint_pad, $portfolio_pad)
+		+container
+		padding: 0 20px
+		margin-top: 130px
+		img
+			width: 100%
+			display: block
+			box-shadow: 0px 2px 6px rgba(0,0,0,.14)
+		.grid-container
+			display: grid
+			grid-column-gap: 10px
+			grid-template-columns: 1fr
+			.item_col-12
+				// height: 300px
+				grid-column: 1
+				grid-row: 1
+				margin-bottom: 10px
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+
+			.item_col-4
+				// height: 300px
+				grid-column: 1
+				// grid-row: 2
+				// margin-bottom: 10px
+				display: flex
+				flex-direction: column
+				justify-content: flex-start
+				align-items: flex-start
+
+				img
+					&:first-child
+						margin-bottom: 10px
+
+			.item_col-8
+				// height: 300px
+				grid-column: 1
+				// grid-row: 2
+				margin-bottom: 10px
+				display: flex
+				flex-direction: row
+				justify-content: flex-start
+				align-items: flex-start
+
+
+			.item_col-6
+				// height: 300px
+				grid-column: 1
+				// grid-row: 3
+				margin-bottom: 10px
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+
+			.item_col-3
+				// height: 300px
+				grid-column: 1
+				// grid-row: 3
+				margin-bottom: 10px
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+
+
+	+susy-breakpoint($breakpoint_desktop, $portfolio_desktop)
+		+container
+		margin-top: 100px
+		padding-left: 90px
+		padding-right: 20px
+		img
+			width: 100%
+			display: block
+			box-shadow: 0px 2px 6px rgba(0,0,0,.14)
+		.back_news
+			display: block
+			width: 80px
+			height: 80px
+			margin: 30px auto
+			background: #dee100
+			border-radius: 50%
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			color: #000
+			font-weight: 300
+		.grid-container
+			display: grid
+			grid-column-gap: 10px
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+			// background-color: #000
+			.item_col-12
+				// height: 300px
+				grid-column: span 12
+				grid-row: 1
+				margin-bottom: 10px
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+
+			.item_col-4
+				// height: 300px
+				grid-column: span 4
+				// grid-row: 2
+				// margin-bottom: 10px
+				display: flex
+				flex-direction: column
+				justify-content: flex-start
+				align-items: flex-start
+
+				img
+					&:first-child
+						margin-bottom: 10px
+
+			.item_col-8
+				// height: 300px
+				grid-column: 5 / span 8
+				// grid-row: 2
+				margin-bottom: 10px
+				display: flex
+				flex-direction: row
+				justify-content: flex-start
+				align-items: flex-start
+
+
+			.item_col-6
+				// height: 300px
+				grid-column: span 6
+				// grid-row: 3
+				margin-bottom: 10px
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+
+			.item_col-3
+				// height: 300px
+				grid-column: span 3
+				// grid-row: 3
+				margin-bottom: 10px
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+
+
+
+
+
+
+
+.about
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		margin-top: 100px
+		padding: 20px
+		h5
+			font-size: 12px
+			color: #FFF
+		h6
+			font-size: 29px
+			// font-family: ‘cwTeXMing’, serif
+			color: #FFF
+			font-weight: 300
+		.y-slash
+			width: 200px
+			height: 16px
+			background: url('../img/y-slash-big.png')
+			background-size: cover
+			margin: 30px 0
+		.anchor_menu
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			margin-bottom: 55px
+			.anchor_menu_item
+				color: $this_yellow
+				margin-right: 30px
+				letter-spacing: 3px
+		.about_description
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			margin-bottom: 50px
+			img
+				display: block
+				width: 100%
+				margin-top: 15px
+				margin-bottom: 30px
+
+			.brand_concept
+				width: 100%
+				img
+					width: 60px
+
+				p
+					font-size: 15px
+					color: #888787
+					margin-bottom: 20px
+					font-weight: 200
+
+		.members
+			position: relative
+			margin-bottom: 150px
+			.y-slash
+				position: absolute
+				top: 70px
+				left: -20%
+				width: 45%
+				height: 16px
+				background: url('../img/y-slash-big.png')
+				background-size: cover
+			.partners
+				partners
+				font-size: 15px
+				color: #FFF
+				margin-bottom: 80px
+				margin-top: 5px
+				font-weight: 200
+				color: #888787
+
+			.chief_members
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				margin-bottom: 10px
+				margin-top: 30px
+
+				.chief_person-left
+					width: 100%
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+					align-items: center
+					padding: 20px
+					background: #FFF
+					// background-image: linear-gradient(to bottom, #f1f200, #dee100)
+					.chief_person-des
+						width: 55%
+						display: flex
+						flex-direction: column
+						justify-content: center
+						align-items: flex-end
+						.t-line
+							width: 140px
+							height: 1px
+							background: #000
+							margin: 20px 0
+						.cheif_sign
+							margin-top: 50px
+
+						h5
+							text-align: left
+							font-size: 16px
+							color: #000
+
+						h6
+							text-align: left
+							font-size: 32px
+							color: #000
+							// font-family: 'Noto Sans', sans-serif, Microsoft JhengHei
+							font-weight: 300
+						p
+							text-align: left
+							color: #000
+							line-height: 2
+							font-weight: 200
+					.chief_person-img
+						width: 40%
+
+				.chief_person-right
+					width: 100%
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+					align-items: center
+					padding: 20px
+					background: #FFF
+					// background: linear-gradient(to bottom, #bcbcbc, #a9a9a9 24%, #e1dfdf 79%, #9b9b9b)
+					.chief_person-des
+						width: 55%
+						display: flex
+						flex-direction: column
+						justify-content: center
+						align-items: flex-start
+						.t-line
+							width: 140px
+							height: 1px
+							background: #000
+							margin: 20px 0
+						.cheif_sign
+							margin-top: 50px
+
+						h5
+							text-align: left
+							font-size: 16px
+							color: #000
+
+						h6
+							text-align: left
+							font-size: 32px
+							color: #000
+							// font-family: 'Noto Sans', sans-serif, Microsoft JhengHei
+							font-weight: 300
+
+						p
+							text-align: left
+							color: #000
+							line-height: 2
+							font-weight: 200
+					.chief_person-img
+						width: 40%
+
+
+			.our_members
+				width: 100%
+				margin-bottom: 180px
+
+				.to_flex
+					display: flex
+					flex-direction: row
+					flex-wrap: wrap
+					justify-content: center
+					align-items: center
+					.our_members_item
+						width: 49%
+
+						background: #979797
+						position: relative
+						margin-bottom: 10px
+						img
+							display: block
+
+						// &:last-child
+						// 	margin-right: 0
+						&:nth-child(odd)
+							margin-right: 2%
+						.mask
+							position: absolute
+							width: 100%
+							height: 60px
+							left: 0
+							bottom: 0
+							display: flex
+							flex-direction: row
+							justify-content: center
+							align-items: center
+							background: rgba(255,255,255,.6)
+							p
+								color: #000
+								font-size: 9px
+								margin-bottom: 0
+								margin-right: 15px
+							h6
+								color: #000
+								font-size: 18px
+								// font-family: 'Noto Sans', sans-serif, Microsoft JhengHei
+								font-weight: 300
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		margin-top: 100px
+		padding: 40px
+		padding-left: 90px
+		h5
+			font-size: 12px
+			color: #FFF
+		h6
+			font-size: 29px
+			// font-family: ‘cwTeXMing’, serif
+			color: #FFF
+			font-weight: 300
+			margin-bottom: 5px
+		.vertical_line
+			height: 100px
+			width: 1px
+			margin-left: 3px
+			margin-bottom: 5px
+			background: $this_yellow
+		.y-slash
+			width: 200px
+			height: 16px
+			background: url('../img/y-slash-big.png')
+			background-size: cover
+			margin: 30px 0
+
+		.anchor_menu
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			margin-bottom: 55px
+			.anchor_menu_item
+				color: $this_yellow
+				margin-right: 30px
+				letter-spacing: 3px
+				cursor: pointer
+		.about_description
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+			margin-bottom: 150px
+			img
+				display: block
+				width: 45%
+				margin-top: 15px
+				margin-bottom: 30px
+
+			.brand_concept
+				width: 40%
+				img
+					width: 60px
+
+
+				p
+					font-size: 15px
+					color: #888787
+					margin-bottom: 20px
+					font-weight: 200
+
+		.members
+			position: relative
+			margin-bottom: 150px
+			.y-slash
+				position: absolute
+				top: 100px
+				left: -20%
+				width: 30%
+				height: 16px
+				background: url('../img/y-slash-big.png')
+				background-size: 100%
+			.partners
+				font-size: 15px
+				color: #FFF
+				margin-bottom: 80px
+				margin-top: 5px
+				font-weight: 200
+				color: #888787
+				.award_years
+					display: flex
+					flex-direction: row
+					justify-content: flex-start
+					align-items: flex-start
+					margin-bottom: 20px
+					.year
+						margin-right: 15px
+
+					.year-item
+
+
+
+
+			.chief_members
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				margin-bottom: 10px
+				margin-top: 30px
+
+				.chief_person-left
+					width: 50%
+					height: 550px
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+					align-items: center
+					padding: 52px 35px 65px 69px
+					background: #FFF
+					margin-right: 5px
+					// background-image: linear-gradient(to bottom, #f1f200, #dee100)
+					.chief_person-des
+						width: 50%
+						display: flex
+						flex-direction: column
+						justify-content: center
+						align-items: flex-end
+						.t-line
+							width: 140px
+							height: 1px
+							background: #000
+							margin: 20px 0
+						.cheif_sign
+							margin-top: 100px
+
+						h5
+							text-align: left
+							font-size: 16px
+							color: #000
+
+						h6
+							text-align: left
+							font-size: 32px
+							color: #000
+							// font-family: 'Noto Sans', sans-serif, Microsoft JhengHei
+							font-weight: 300
+
+						p
+							text-align: left
+							color: #000
+							line-height: 2
+							font-weight: 200
+					.chief_person-img
+						width: 40%
+
+				.chief_person-right
+					width: 50%
+					height: 550px
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+					align-items: center
+					padding: 52px 35px 65px 69px
+					background: #FFF
+					margin-left: 5px
+					// background: linear-gradient(to bottom, #bcbcbc, #a9a9a9 24%, #e1dfdf 79%, #9b9b9b)
+					.chief_person-des
+						width: 50%
+						display: flex
+						flex-direction: column
+						justify-content: center
+						align-items: flex-start
+						.t-line
+							width: 140px
+							height: 1px
+							background: #000
+							margin: 20px 0
+						.cheif_sign
+							margin-top: 100px
+
+						h5
+							text-align: left
+							font-size: 16px
+							color: #000
+
+						h6
+							text-align: left
+							font-size: 32px
+							color: #000
+							// font-family: 'Noto Sans', sans-serif, Microsoft JhengHei
+							font-weight: 300
+
+
+						p
+							text-align: left
+							color: #000
+							line-height: 2
+							font-weight: 200
+					.chief_person-img
+						width: 40%
+
+
+			.our_members
+				width: 100%
+				margin-bottom: 180px
+
+				.to_flex
+					display: flex
+					flex-direction: row
+					flex-wrap: wrap
+					justify-content: flex-start
+					align-items: center
+					.our_members_item
+						width: 25%
+
+						margin-right: 0px
+						background: #979797
+						position: relative
+						margin-bottom: 10px
+						img
+							display: block
+
+						&:last-child
+							margin-right: 0
+
+						.mask
+							position: absolute
+							width: 100%
+							height: 60px
+							left: 0
+							bottom: 0
+							display: flex
+							flex-direction: row
+							justify-content: center
+							align-items: center
+							background: rgba(255,255,255,.6)
+							p
+								color: #000
+								font-size: 12px
+								margin-bottom: 0
+								margin-right: 15px
+							h6
+								color: #000
+								font-size: 24px
+								// font-family: 'Noto Sans', sans-serif, Microsoft JhengHei
+								font-weight: 300
+
+
+
+
+
+.p-1
+	background-image: linear-gradient(to bottom, #f1f200, #dee100)
+.p-2
+	background: linear-gradient(to bottom, #bcbcbc, #a9a9a9 24%, #e1dfdf 79%, #9b9b9b)
+
+
+.preblock
+	height: 50px
+	clear: both
+
+
+
+
+.news
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		.grid-container
+			display: grid
+			grid-column-gap: 10px
+			grid-template-columns: 1fr
+			// background-color: #000
+
+			.item_col-12
+				// height: 300px
+				display: block
+				grid-column: 1
+				grid-row: 1
+				margin-bottom: 10px
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				transition: all .3s
+				.img-box
+					.des
+						background: #222
+						padding: 20px 30px
+						h5 
+							font-size: 18px
+							color: #FFF
+						h6 
+							font-size: 14px
+							color: #FFF
+							font-weight: 100
+			
+
+			.item_col-6
+				display: block
+				// height: 300px
+				grid-column: 1
+				// grid-row: 3
+				margin-bottom: 10px
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				transition: all .3s
+				.img-box
+					.des
+						background: #FFF
+						padding: 20px 30px
+						h5 
+							font-size: 18px
+							color: #222
+						h6 
+							font-size: 14px
+							color: #222
+							font-weight: 100
+				// &:hover
+				// 	transform: scale(1.05)
+
+			.detail_des
+				// width: 100%
+				grid-column: 1
+				background: #FFF
+				padding: 30px
+				margin: 30px 0
+				.l--l
+					height: 1px
+					width: 100%
+					background: #ddd
+					margin: 30px 0
+				h5 
+					color: #000
+					font-size: 28px
+					letter-spacing: 3px
+				h6 
+					font-size: 14px
+					color: #222
+					font-weight: 100
+					margin-top: 20px
+					letter-spacing: 3px
+
+				p
+					font-size: 16px
+					color: #222
+					font-weight: 400
+					line-height: 1.6
+					margin-bottom: 5px
+
+			.others
+				grid-column: 1
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				align-items: center
+				margin-bottom: 30px
+				.ll
+					width: 40%
+					height: 1px
+					background: #999
+				h6 
+					font-size: 20px
+					color: #000
+					margin: 0 20px
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		.grid-container
+			display: grid
+			grid-column-gap: 10px
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+			// background-color: #000
+
+			.item_col-12
+				// height: 300px
+				display: block
+				grid-column: span 12
+				grid-row: 1
+				margin-bottom: 10px
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				transition: all .3s
+				.img-box
+					.des
+						background: #222
+						padding: 20px 30px
+						h5 
+							font-size: 18px
+							color: #FFF
+						h6 
+							font-size: 14px
+							color: #FFF
+							font-weight: 100
+			
+
+			.item_col-6
+				display: block
+				// height: 300px
+				grid-column: span 6
+				// grid-row: 3
+				margin-bottom: 10px
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				transition: all .3s
+				.img-box
+					.des
+						background: #FFF
+						padding: 20px 30px
+						h5 
+							font-size: 18px
+							color: #222
+						h6 
+							font-size: 14px
+							color: #222
+							font-weight: 100
+				// &:hover
+				// 	transform: scale(1.05)
+
+			.detail_des
+				// width: 100%
+				grid-column: span 12
+				background: #FFF
+				padding: 30px
+				margin: 30px 0
+				.l--l
+					height: 1px
+					width: 100%
+					background: #ddd
+					margin: 30px 0
+				h5 
+					color: #000
+					font-size: 28px
+					letter-spacing: 3px
+				h6 
+					font-size: 14px
+					color: #222
+					font-weight: 100
+					margin-top: 20px
+					letter-spacing: 3px
+
+				p
+					font-size: 16px
+					color: #222
+					font-weight: 400
+					line-height: 1.6
+					margin-bottom: 5px
+				.gotoyy
+					margin-top: 50px
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+					align-items: center
+					.row-l
+						width: 72%
+						height: 1px
+						background: #ddd
+						margin-right: 20px
+					p 
+						font-weight: 900	
+					img 
+						width: 60px
+						margin-left: 10px
+						box-shadow: none
+
+			.others
+				grid-column: span 12
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				align-items: center
+				margin-bottom: 30px
+				.ll
+					width: 40%
+					height: 1px
+					background: #999
+				h6 
+					font-size: 20px
+					color: #000
+					margin: 0 20px
+
+
+
+
+
+

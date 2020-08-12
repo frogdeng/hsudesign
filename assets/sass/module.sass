@@ -1,0 +1,742 @@
+
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexming.css)
+
+@import reset
+@import _index
+@import _page
+
+
+body
+	background: #000
+	// font-family: Microsoft JhengHei
+	font-family: 'Helvetica', 'Noto Sans', sans-serif, Microsoft JhengHei
+	// font-family: 'Raleway', sans-serif;
+	// -webkit-font-smoothing: antialiased
+	overflow-x: hidden
+	line-height: 1.5
+
+a
+	color: #888
+.clear
+	clear: both
+.clearfix:before,.clearfix:after
+	content: ""
+	display: table
+.clearfix:after
+	clear: both
+.clearfix
+	zoom: 1 /* ie 6/7 */
+
+
+// $this_yellow: #dee100
+
+.white_mockup
+	background: #fbfbfb
+	// background: url('../img/paper_background.png')
+
+.black_mockup
+	background: #000
+	background: url('../img/black_bg.jpg') top
+	background-size: cover
+
+
+
+
+
+
+
+.header_wrapper
+	background: url('../img/mg-5543-2.jpg') top
+	background-repeat: no-repeat
+	background-size: cover
+	width: 100%
+	height: 800px
+
+
+
+header
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		height: 90px
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		
+
+		.deskmenu
+			+susy-breakpoint($breakpoint_pad, $w_pad)
+				+container
+				display: none
+
+			+susy-breakpoint($breakpoint_desktop, $desktop)
+				+container
+				width: 900px
+				height: 50px
+				margin: 0
+				// background-color: #eee
+				z-index: 1000
+				display: flex
+				flex-direction: row
+				justify-content: flex-end
+				align-items: center
+				ul
+					display: flex
+					flex-direction: row
+					justify-content: flex-end
+					align-items: center
+					li
+						position: relative
+						display: flex
+						flex-direction: column
+						justify-content: flex-end
+						align-items: center
+						transition: all .3s
+						a
+							display: block
+							height: 40px
+							color: #000
+							padding: 0 22px
+							font-size: 14px
+							font-weight: 700
+							display: flex
+							flex-direction: row
+							justify-content: flex-end
+							align-items: center
+							transition: all .3s
+
+						&:hover
+							a
+								color: $this_yellow
+
+
+.header_body
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		.this_wrapper
+			width: 100%
+			// background: #289
+			display: flex
+			flex-direction: row
+			justify-content: flex-end
+			align-items: center
+			position: relative
+			.slogen
+				width: 250px
+				position: absolute
+				top: 150px
+				left: 90px
+			.logo
+				width: 80%
+				height: 238px
+				margin-top: 400px
+				img
+					display: block
+					width: 100%
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		.this_wrapper
+			width: 100%
+			// background: #289
+			display: flex
+			flex-direction: row
+			justify-content: flex-end
+			align-items: center
+			position: relative
+
+			.slogen
+				width: 330px
+				position: absolute
+				top: 150px
+				left: 100px
+
+			.logo
+				width: 400px
+				height: 238px
+				margin-top: 400px
+				img
+					display: block
+					width: 100%
+
+
+
+
+
+
+
+
+
+
+
+.desktop_aside_menu
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		position: fixed
+		width: 45px
+		height: 45px
+		padding: 5px
+		background: rgba(251,251,251, .6)
+		cursor: pointer
+		left: 20px
+		top: 22px
+		z-index: 2000
+		.t-t
+			display: none
+			font-size: 12px
+			letter-spacing: 2px
+			transform: scale(.8)
+			margin-left: -4px
+			color: #000
+			// text-align: left
+		.a-l, .b-l,
+			display: block
+			width: 100%
+			height: 1px
+			background: #000
+			margin-bottom: 10px
+			margin-top: 5px
+			transition: all .5s ease
+			transform: rotate(0deg) translate3d(0px, 0px, 0px)
+		.c-l
+			display: block
+			width: 40%
+			height: 1px
+			background: #000
+			margin-bottom: 8px
+			margin-top: 5px
+			transition: all .5s ease
+			transform: rotate(0deg) translate3d(0px, 0px, 0px)
+
+
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		position: fixed
+		width: 50px
+		height: 70px
+		padding: 0 8px
+		// background: #fbfbfb
+		cursor: pointer
+		left: 20px
+		top: 25%
+		// margin-top: -25px
+		z-index: 2000
+		.t-t
+			display: inline-block
+			font-size: 12px
+			letter-spacing: 2px
+			transform: scale(.8)
+			margin-left: -4px
+			color: #000
+			// text-align: left
+
+		.a-l, .b-l,
+			display: block
+			width: 100%
+			height: 1px
+			background: #000
+			margin-bottom: 10px
+			margin-top: 5px
+			transition: all .5s ease
+			transform: rotate(0deg) translate3d(0px, 0px, 0px)
+		.c-l
+			display: block
+			width: 40%
+			height: 1px
+			background: #000
+			margin-bottom: 8px
+			margin-top: 5px
+			transition: all .5s ease
+			transform: rotate(0deg) translate3d(0px, 0px, 0px)
+
+
+
+
+
+
+
+
+.desktop_aside_menu_w
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		position: fixed
+		width: 42px
+		height: 40px
+		padding: 4px
+		background: rgba(0,0,0, .6)
+		cursor: pointer
+		left: 20px
+		top: 22px
+		z-index: 2000
+		.t-t
+			display: none
+			font-size: 12px
+			letter-spacing: 2px
+			transform: scale(.8)
+			margin-left: -4px
+			color: #000
+			// text-align: left
+		.a-l, .b-l,
+			display: block
+			width: 100%
+			height: 1px
+			background: #FFF
+			margin-bottom: 10px
+			margin-top: 5px
+			transition: all .5s ease
+			transform: rotate(0deg) translate3d(0px, 0px, 0px)
+		.c-l
+			display: block
+			width: 40%
+			height: 1px
+			background: #FFF
+			margin-bottom: 8px
+			margin-top: 5px
+			transition: all .5s ease
+			transform: rotate(0deg) translate3d(0px, 0px, 0px)
+
+
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		position: fixed
+		width: 50px
+		height: 70px
+		padding: 0 8px
+		// background: #fbfbfb
+		cursor: pointer
+		left: 20px
+		top: 25%
+		// margin-top: -25px
+		z-index: 2000
+		.t-t
+			display: inline-block
+			font-size: 12px
+			letter-spacing: 2px
+			transform: scale(.8)
+			margin-left: -4px
+			color: #FFF
+			// text-align: left
+
+		.a-l, .b-l,
+			display: block
+			width: 100%
+			height: 1px
+			background: #FFF
+			margin-bottom: 10px
+			margin-top: 5px
+			transition: all .5s ease
+			transform: rotate(0deg) translate3d(0px, 0px, 0px)
+		.c-l
+			display: block
+			width: 40%
+			height: 1px
+			background: #FFF
+			margin-bottom: 8px
+			margin-top: 5px
+			transition: all .5s ease
+			transform: rotate(0deg) translate3d(0px, 0px, 0px)
+
+
+
+
+
+
+
+.desktop_aside
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: block
+		position: fixed
+		width: 252px
+		height: 400px
+		background: rgba(255,255,255, 1)
+		border: 2px solid $this_yellow
+		transition: all .2s ease
+		left: -255px
+		top: 10%
+		margin-top: 0px
+		z-index: 1200
+		overflow-x: hidden
+		// padding-left: 100px
+		display: flex
+		flex-direction: row
+		justify-content: flex-end
+		align-items: center
+		ul
+			li
+				.m-first
+					display: flex
+					justify-content: space-between
+					align-items: center
+					font-size: 15px
+					height: 55px
+					width: 200px
+					padding-right: 30px
+					line-height: 1.4
+					color: #000
+					border-bottom: 1px dashed #eee
+					img
+						width: 22px
+					.circle
+						background: #000
+						width: 25px
+						height: 25px
+						border-radius: 50%
+						display: flex
+						flex-direction: row
+						justify-content: center
+						align-items: center
+						i
+							color: #FFF
+					.yahoo
+						width: 30px
+						height: 30px
+						img 
+							display: block
+							width: 100%
+
+
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		display: block
+		position: fixed
+		width: 252px
+		height: 400px
+		background: rgba(255,255,255, 1)
+		border: 2px solid $this_yellow
+		transition: all .2s ease
+		left: -255px
+		top: 25%
+		margin-top: -100px
+		z-index: 1200
+		overflow-x: hidden
+		// padding-left: 100px
+		display: flex
+		flex-direction: row
+		justify-content: flex-end
+		align-items: center
+		ul
+			li
+				.m-first
+					display: flex
+					justify-content: space-between
+					align-items: center
+					font-size: 14px
+					height: 50px
+					width: 150px
+					padding-right: 30px
+					line-height: 1.4
+					color: #000
+					border-bottom: 1px dashed #eee
+					img
+						width: 22px
+					.circle
+						background: #000
+						width: 25px
+						height: 25px
+						border-radius: 50%
+						display: flex
+						flex-direction: row
+						justify-content: center
+						align-items: center
+						i
+							color: #FFF
+					.yahoo
+						width: 30px
+						height: 30px
+						img 
+							display: block
+							width: 100%
+
+
+.hamburg-open
+	left: -2px !important
+	transform: rotate(0deg) translate3d(0px, 0px, 0px)
+
+
+
+.cross
+	background: none !important
+	.t-t
+		color: #555
+
+	.a-l
+		display: block
+		width: 100%
+		margin: 0 auto
+		height: 1px
+		background: #555
+		margin-bottom: 6px
+		margin-top: 6px
+		transition: all .3s ease
+		transform: rotate(330deg) translate3d(-5px, 7px, 0px)
+	.b-l
+		display: block
+		width: 100%
+		margin: 0 auto
+		height: 1px
+		background: #555
+		margin-bottom: 6px
+		margin-top: 6px
+		transition(all .2s ease)
+		transform: rotate(-330deg) translate3d(0px, 2px, 0px)
+		opacity: 1
+
+	.c-l
+		display: block
+		width: 100%
+		margin: 0 auto
+		height: 1px
+		background: #555
+		margin-bottom: 6px
+		margin-top: 6px
+		transition: all .3s ease
+		transform: rotate(-405deg) translate3d(8px, -8px, 0px)
+		opacity: 0
+
+
+
+.bk_bg
+	display: none
+
+
+
+
+.bk_bg_show
+	display: block
+	position: fixed
+	width: 100%
+	height: 100%
+	left: 0
+	top: 0
+	background: rgba(0,0,0,.85)
+	z-index: 100
+
+
+
+
+
+.inside_header_pos
+	width: 100%
+	position: absolute
+	top: 33px
+	z-index: 1500
+
+
+.inside_header
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		width: 100%
+		.for_flex
+			+span(6)
+			height: 21px
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			.row-logo
+				width: 172px
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+			.inside_menu_wh
+				display: none
+			.inside_menu_bk
+				display: none
+
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		// margin-top: 40px
+		width: 100%
+		.for_flex
+			+span(12)
+			height: 21px
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+			.row-logo
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+
+
+			.inside_menu_wh
+				ul
+					display: flex
+					flex-direction: row
+					justify-content: flex-end
+					align-items: center
+					li
+						a
+							display: block
+							margin: 0 10px
+							font-size: 14px
+							color: #000
+							&:hover
+								color: #dee100
+					.fb-btn
+						width: 25px
+						height: 25px
+						background: #dee100
+						border-radius: 50%
+						display: flex
+						flex-direction: row
+						justify-content: center
+						align-items: center
+						i
+							color: #000
+							font-size: 13px
+							margin: 0
+
+					.yahoo-btn
+						display: block
+						width: 28px
+						height: 28px
+						margin: 0 30px
+						img 
+							display: block
+
+					
+
+			.inside_menu_bk
+				ul
+					display: flex
+					flex-direction: row
+					justify-content: flex-end
+					align-items: center
+					li
+						a
+							display: block
+							margin: 0 10px
+							font-size: 14px
+							color: #FFF
+							&:hover
+								color: #dee100
+					.fb-btn
+						width: 25px
+						height: 25px
+						background: #dee100
+						border-radius: 50%
+						display: flex
+						flex-direction: row
+						justify-content: center
+						align-items: center
+						i
+							color: #FFF
+							font-size: 13px
+							margin: 0
+
+					.yahoo-btn
+						display: block
+						width: 28px
+						height: 28px
+						margin: 0 30px
+						img 
+							display: block
+
+					
+
+
+.menu_wrapper
+	background: #fcfcfc
+	border-bottom: 5px solid #ebebeb
+	width: 100%
+	.submenu
+		position: absolute
+		width: 100%
+		height: 0px
+		background: #22b1bf
+		transition: all .2s
+
+.submenu-open
+	height: 50px !important
+
+
+
+
+
+
+
+
+
+
+
+.footer_wrapper
+	width: 100%
+	background: #4c4948
+	background-size: cover
+	padding: 20px 0
+	margin-top: 50px
+
+
+
+footer
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		padding: 0 20px
+		.copyright
+			padding: 20px
+			display: flex
+			flex-wrap: wrap
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			img
+				margin-bottom: 50px
+			p
+				color: #999
+				font-size: 14px
+				line-height: 1.5
+				margin-bottom: 3px
+				text-align: center
+
+
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		padding: 0 20px
+		.copyright
+			padding: 30px
+			display: flex
+			flex-wrap: wrap
+			flex-direction: column
+			justify-content: flex-start
+			align-items: center
+			img
+				margin-bottom: 120px
+			p
+				color: #999
+				width: 250px
+				font-size: 14px
+				line-height: 1.5
+				margin-bottom: 3px
+				// text-align: center
+				span
+					margin-right: 20px
+
+
+
+

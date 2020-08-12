@@ -1,0 +1,157 @@
+{# index.twig #}
+{% extends "/_template/layout_white.twig" %}
+{% block page %}
+
+
+
+{% include '_template/_partial/top_menu_wh-bg.twig' %}
+
+<div class="works_wrapper">
+	<div class="works_fun_section">
+		<div class="woks_filter">
+			<div id="filters" class="works_menu filter_button button-group filters-button-group">
+				<div class="filter_button_item all" data-filter="*">All</div>
+				<div class="filter_button_item filter__books" data-filter=".filter__books">書籍</div>
+				<div class="filter_button_item filter__package" data-filter=".filter__package">包裝</div>
+				<div class="filter_button_item filter__visual" data-filter=".filter__visual">視覺</div>
+				<div class="filter_button_item filter__space" data-filter=".filter__space">空間</div>
+				<div class="filter_button_item filter__activity" data-filter=".filter__activity">活動</div>
+			</div>
+
+			<div class="works_search">
+				<input type="text" id="quicksearch" class="quicksearch" placeholder="請輸入關鍵字">
+				<i class="fas fa-search"></i>
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<div class="works_list_section">
+		<div class="works_list_wrapper grid" id="Container">
+			<!-- ============== [書籍] ============== -->
+			<!-- books -->
+			{% for key, value in _books %}
+				<a href="{{value[0].link}}">
+					<div class="element_item transition filter__books " data-category="transition">
+						<div class="works_block">
+							<div class="pic">
+								<img src={{value[0].photo_index}} alt="">
+								<!-- <img src="img/y-slash.png" alt=""> -->
+							</div>
+							<div class="works_des">
+								<h5>Taiwan / Taipei</h5>
+								<h6>{{value[0].thistitle}}</h6>
+								<p>{{value[0].intro}}</p>
+								<div class="arrow_right"><img src="img/h-arrow.svg" alt=""></div>
+							</div>
+
+						</div>
+					</div>
+				</a>
+			{% endfor %}
+
+			<!-- ============== [包裝] ============== -->
+			<!-- package -->
+			{% for key, value in _package %}
+				<a href="{{value[0].link}}">
+					<div class="element_item transition filter__package" data-category="transition">
+						<div class="works_block">
+							<div class="pic">
+								<img src={{value[0].photo_index}} alt="">
+								<!-- <img src="img/y-slash.png" alt=""> -->
+							</div>
+							<div class="works_des">
+								<h5>Taiwan / Taipei</h5>
+								<h6>{{value[0].thistitle}}</h6>
+								<p>{{value[0].intro}}</p>
+								<div class="arrow_right"><img src="img/h-arrow.svg" alt=""></div>
+							</div>
+
+						</div>
+					</div>
+				</a>
+			{% endfor %}
+
+			<!-- ============== [視覺] ============== -->
+			<!-- visual -->
+			{% for key, value in _visual %}
+				<a href="{{value[0].link}}">
+					<div class="element_item transition filter__visual" data-category="transition">
+						<div class="works_block">
+							<div class="pic">
+								<img src={{value[0].photo_index}} alt="">
+								<!-- <img src="img/y-slash.png" alt=""> -->
+							</div>
+							 <div class="works_des">
+								<h5>Taiwan / Taipei</h5>
+								<h6>{{value[0].thistitle}}</h6>
+								<p>{{value[0].intro}}</p>
+								<div class="arrow_right"><img src="img/h-arrow.svg" alt=""></div>
+							</div>
+
+						</div>
+					</div>
+				</a>
+			{% endfor %}
+
+			<!-- ============== [空間] ============== -->
+			<!-- visual -->
+			{% for key, value in _interiordesign %}
+				<a href="{{value[0].link}}">
+					<div class="element_item transition filter__space" data-category="transition">
+						<div class="works_block">
+							<div class="pic">
+								<img src={{value[0].photo_index}} alt="">
+								<!-- <img src="img/y-slash.png" alt=""> -->
+							</div>
+							<div class="works_des">
+								<h5>Taiwan / Taipei</h5>
+								<h6>{{value[0].thistitle}}</h6>
+								<p>{{value[0].intro}}</p>
+								<div class="arrow_right"><img src="img/h-arrow.svg" alt=""></div>
+							</div>
+
+						</div>
+					</div>
+				</a>
+			{% endfor %}
+
+			<!-- ============== [活動] ============== -->
+			<!-- visual -->
+			{% for key, value in _events %}
+				<a href="{{value[0].link}}">
+					<div class="element_item transition filter__activity" data-category="transition">
+						<div class="works_block">
+							<div class="pic">
+								<img src={{value[0].photo_index}} alt="">
+								<!-- <img src="img/y-slash.png" alt=""> -->
+							</div>
+							<div class="works_des">
+								<h5>Taiwan / Taipei</h5>
+								<h6>{{value[0].thistitle}}</h6>
+								<p>{{value[0].intro}}</p>
+								<div class="arrow_right"><img src="img/h-arrow.svg" alt=""></div>
+							</div>
+
+						</div>
+					</div>
+				</a>
+			{% endfor %}
+
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}x
