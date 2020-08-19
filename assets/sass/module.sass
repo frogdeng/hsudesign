@@ -50,7 +50,7 @@ a
 	background-repeat: no-repeat
 	background-size: cover
 	width: 100%
-	height: 900px
+	height: 85vh
 
 
 
@@ -393,16 +393,17 @@ header
 					img
 						width: 22px
 					.circle
-						background: #000
-						width: 25px
-						height: 25px
-						border-radius: 50%
+						// background: #111
+						width: 30px
+						height: 30px
+						border: 1px solid #000
+						// border-radius: 50%
 						display: flex
 						flex-direction: row
 						justify-content: center
 						align-items: center
 						i
-							color: #FFF
+							color: #000
 					.yahoo
 						width: 30px
 						height: 30px
@@ -446,16 +447,17 @@ header
 					img
 						width: 22px
 					.circle
-						background: #000
-						width: 25px
-						height: 25px
-						border-radius: 50%
+						// background: #111
+						width: 30px
+						height: 30px
+						border: 1px solid #000
+						// border-radius: 50%
 						display: flex
 						flex-direction: row
 						justify-content: center
 						align-items: center
 						i
-							color: #FFF
+							color: #000
 					.yahoo
 						width: 30px
 						height: 30px
@@ -597,7 +599,7 @@ header
 							font-size: 14px
 							color: #383838
 							&:hover
-								color: #dee100
+								color: #b38112
 					.fb-btn
 						width: 25px
 						height: 25px
@@ -609,10 +611,17 @@ header
 						flex-direction: row
 						justify-content: center
 						align-items: center
+						transition: all .3s
 						i
 							color: #000
 							font-size: 13px
 							margin: 0
+						&:hover
+							background: #000
+				
+							i
+								color: #FFF
+
 
 					.yahoo-btn
 						display: block
@@ -637,7 +646,7 @@ header
 							font-size: 14px
 							color: #383838
 							&:hover
-								color: #dee100
+								color: #b38112
 					.fb-btn
 						width: 25px
 						height: 25px
@@ -653,7 +662,7 @@ header
 							color: #000
 							font-size: 13px
 							margin: 0
-
+						
 					.yahoo-btn
 						display: block
 						width: 28px
