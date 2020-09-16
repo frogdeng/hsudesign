@@ -7,7 +7,7 @@
 
 
 body
-	background: #000
+	background: #f2f2f2
 	// font-family: Microsoft JhengHei
 	font-family: 'Helvetica', 'Noto Sans', sans-serif, Microsoft JhengHei
 	// font-family: 'Raleway', sans-serif;
@@ -43,14 +43,32 @@ a
 
 
 
+.header_wrapper_mobile
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: block
+		img 
+			display: block
+
+
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		display: none
 
 
 .header_wrapper
-	background: url('../img/home.jpg') bottom
-	background-repeat: no-repeat
-	background-size: cover
-	width: 100%
-	height: 85vh
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		display: none
+
+
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		background: url('../img/home.jpg') bottom
+		background-repeat: no-repeat
+		background-size: cover
+		width: 100%
+		height: 85vh
 
 
 
@@ -702,7 +720,7 @@ header
 	width: 100%
 	background: #FCFBFA
 	background-size: cover
-	padding: 40px 0
+	padding: 100px 0 40px 0
 	margin-top: 0px
 
 
@@ -752,7 +770,7 @@ footer
 		align-items: center
 		.hsu_logo
 			width: 300px
-			margin-right: 50px
+			margin-right: 100px
 			img
 				display: block
 		.f-text
@@ -773,6 +791,30 @@ footer
 					margin-right: 20px
 		
 		
+.notice-popup3
+	position: relative
+	background: #FFF 
+	max-width: 600px
+	height: 250px
+	padding: 44px
+	margin: 0 auto
+	border: 3px solid #b38112
+	display: flex
+	flex-wrap: wrap
+	flex-direction: column
+	justify-content: center
+	align-items: center
+
+	h6
+		font-size: 35px
+		text-align: center
+		color: #b38112
+		margin-bottom: 10px
+
+	p
+		font-size: 21px
+		text-align: center 
+		color: #222
 
 
 

@@ -1309,7 +1309,7 @@ a {
     clear: both; } }
 
 .is-checked {
-  color: #dee100 !important;
+  color: #b38112 !important;
   text-decoration: underline; }
 
 @media (min-width: 0) and (max-width: 990px) {
@@ -2072,7 +2072,7 @@ a {
     width: 80px;
     height: 80px;
     margin: 30px auto;
-    background: #dee100;
+    background: #b38112;
     border-radius: 50%;
     display: -ms-flexbox;
     display: flex;
@@ -2082,7 +2082,7 @@ a {
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
-    color: #000;
+    color: #FFF;
     font-weight: 300; }
   .portfolio_layout_module .grid-container {
     display: -ms-grid;
@@ -2796,7 +2796,7 @@ a {
     transition: all .3s; }
   .news .grid-container .item_col-12 .img-box .des {
     background: #222;
-    padding: 20px 30px; }
+    padding: 20px 40px; }
   .news .grid-container .item_col-12 .img-box .des h5 {
     font-size: 18px;
     color: #FFF; }
@@ -2804,6 +2804,28 @@ a {
     font-size: 14px;
     color: #FFF;
     font-weight: 100; }
+  .news .grid-container .newhome_text {
+    display: block;
+    -ms-grid-column: span 12;
+    grid-column: span 12;
+    background: #FFF;
+    padding: 30px;
+    margin: 30px 0; }
+  .news .grid-container .newhome_text .l-l {
+    height: 1px;
+    width: 100%;
+    background: #eee;
+    margin: 40px 0; }
+  .news .grid-container .newhome_text h6 {
+    font-size: 30px;
+    color: #000;
+    font-weight: 300;
+    line-height: 1.8; }
+  .news .grid-container .newhome_text p {
+    font-size: 16px;
+    color: #888;
+    font-weight: 300;
+    line-height: 2; }
   .news .grid-container .item_col-6 {
     display: block;
     -ms-grid-column: span 6;
@@ -2898,7 +2920,7 @@ a {
     margin: 0 20px; } }
 
 body {
-  background: #000;
+  background: #f2f2f2;
   font-family: 'Helvetica', 'Noto Sans', sans-serif, Microsoft JhengHei;
   overflow-x: hidden;
   line-height: 1.5; }
@@ -2927,12 +2949,55 @@ a {
   background: url("../img/black_bg.jpg") top;
   background-size: cover; }
 
-.header_wrapper {
-  background: url("../img/home.jpg") bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 85vh; }
+@media (min-width: 0) and (max-width: 990px) {
+  .header_wrapper_mobile {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+  .header_wrapper_mobile:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .header_wrapper_mobile img {
+    display: block; } }
+
+@media (min-width: 991px) {
+  .header_wrapper_mobile {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: none; }
+  .header_wrapper_mobile:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 0) and (max-width: 990px) {
+  .header_wrapper {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: none; }
+  .header_wrapper:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 991px) {
+  .header_wrapper {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: url("../img/home.jpg") bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 85vh; }
+  .header_wrapper:after {
+    content: " ";
+    display: block;
+    clear: both; } }
 
 @media (min-width: 0) and (max-width: 990px) {
   header {
@@ -3660,7 +3725,7 @@ a {
   width: 100%;
   background: #FCFBFA;
   background-size: cover;
-  padding: 40px 0;
+  padding: 100px 0 40px 0;
   margin-top: 0px; }
 
 @media (min-width: 0) and (max-width: 990px) {
@@ -3728,7 +3793,7 @@ a {
     clear: both; }
   footer .hsu_logo {
     width: 300px;
-    margin-right: 50px; }
+    margin-right: 100px; }
   footer .hsu_logo img {
     display: block; }
   footer .f-text {
@@ -3746,3 +3811,33 @@ a {
     text-align: left; }
   footer .f-text p span {
     margin-right: 20px; } }
+
+.notice-popup3 {
+  position: relative;
+  background: #FFF;
+  max-width: 600px;
+  height: 250px;
+  padding: 44px;
+  margin: 0 auto;
+  border: 3px solid #b38112;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.notice-popup3 h6 {
+  font-size: 35px;
+  text-align: center;
+  color: #b38112;
+  margin-bottom: 10px; }
+
+.notice-popup3 p {
+  font-size: 21px;
+  text-align: center;
+  color: #222; }

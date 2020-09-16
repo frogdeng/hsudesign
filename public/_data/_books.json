@@ -1,4 +1,102 @@
-{
+{    "books_34": [
+        {
+            "photo_1": "img/works/books/books_30/1.jpg",
+            "photo_2": "img/works/books/books_30/3.jpg",
+            "photo_3": "img/works/books/books_30/4.jpg",
+            "photo_4": "img/works/books/books_30/2.jpg",
+
+
+            "thistitle": "奇幻國度",
+            "intro": "",
+            "description": " <p> <\/p>\n   ",
+
+            "photo_index": "img/works_index/books_30.jpg",
+            "link": "portfolio_c_books.html?=books_30"
+
+    
+        }
+    ],
+
+     "books_33": [
+        {
+            "photo_1": "img/works/books/books_31/1.jpg",
+            "photo_2": "img/works/books/books_31/3.jpg",
+            "photo_3": "img/works/books/books_31/4.jpg",
+            "photo_4": "img/works/books/books_31/2.jpg",
+
+
+            "thistitle": "人生無極限，孫子兵法打造你的全勝思維",
+            "intro": "",
+            "description": " <p> <\/p>\n   ",
+
+            "photo_index": "img/works_index/books_31.jpg",
+            "link": "portfolio_c_books.html?=books_31"
+
+    
+        }
+    ],
+
+
+    "books_32": [
+        {
+            "photo_1": "img/works/books/books_32/1.jpg",
+            "photo_2": "img/works/books/books_32/3.jpg",
+            "photo_3": "img/works/books/books_32/4.jpg",
+            "photo_4": "img/works/books/books_32/2.jpg",
+
+
+            "thistitle": "不怕輸，就怕放棄",
+            "intro": "",
+            "description": " <p> <\/p>\n   ",
+
+            "photo_index": "img/works_index/books_32.jpg",
+            "link": "portfolio_c_books.html?=books_32"
+
+    
+        }
+    ],
+
+    
+  
+    "books_31": [
+        {
+            "photo_1": "img/works/books/books_33/1.jpg",
+            "photo_2": "img/works/books/books_33/3.jpg",
+            "photo_3": "img/works/books/books_33/4.jpg",
+            "photo_4": "img/works/books/books_33/2.jpg",
+
+
+            "thistitle": "從AI到智慧醫療",
+            "intro": "",
+            "description": " <p> <\/p>\n   ",
+
+            "photo_index": "img/works_index/books_33.jpg",
+            "link": "portfolio_c_books.html?=books_33"
+
+    
+        }
+    ],
+
+    "books_30": [
+        {
+            "photo_1": "img/works/books/books_34/1.jpg",
+            "photo_2": "img/works/books/books_34/3.jpg",
+            "photo_3": "img/works/books/books_34/4.jpg",
+            "photo_4": "img/works/books/books_34/2.jpg",
+
+
+            "thistitle": "如何創造全世界最好的工作",
+            "intro": "",
+            "description": " <p> <\/p>\n   ",
+
+            "photo_index": "img/works_index/books_34.jpg",
+            "link": "portfolio_c_books.html?=books_34"
+
+    
+        }
+    ],
+
+
 
     "books_01": [
         {
@@ -371,19 +469,19 @@
              "link": "portfolio_c_books.html?=books_24"
         }
     ],
-    "books_25": [
+    "books_27": [
         {
-            "photo_1": "img/works/books/books_25/1.png",
-            "photo_2": "img/works/books/books_25/2.png",
-            "photo_3": "img/works/books/books_25/3.png",
-            "photo_4": "img/works/books/books_25/4.png",
+            "photo_1": "img/works/books/books_27/1.png",
+            "photo_2": "img/works/books/books_27/2.png",
+            "photo_3": "img/works/books/books_27/3.png",
+            "photo_4": "img/works/books/books_27/4.png",
 
-            "thistitle": "穩步.慢行",
+            "thistitle": "圖解古埃及文明",
             "intro": "",
             "description": " <p> <\/p>\n  ",
 
-            "photo_index": "img/works_index/books_25.jpg",
-             "link": "portfolio_c_books.html?=books_25"
+            "photo_index": "img/works_index/books_27.jpg",
+             "link": "portfolio_c_books.html?=books_27"
         }
     ],
     "books_26": [
@@ -401,21 +499,23 @@
              "link": "portfolio_c_books.html?=books_26"
         }
     ],
-    "books_27": [
+    "books_25": [
         {
-            "photo_1": "img/works/books/books_27/1.png",
-            "photo_2": "img/works/books/books_27/2.png",
-            "photo_3": "img/works/books/books_27/3.png",
-            "photo_4": "img/works/books/books_27/4.png",
+            "photo_1": "img/works/books/books_25/1.png",
+            "photo_2": "img/works/books/books_25/2.png",
+            "photo_3": "img/works/books/books_25/3.png",
+            "photo_4": "img/works/books/books_25/4.png",
 
-            "thistitle": "圖解古埃及文明",
+            "thistitle": "穩步.慢行",
             "intro": "",
             "description": " <p> <\/p>\n  ",
 
-            "photo_index": "img/works_index/books_27.jpg",
-             "link": "portfolio_c_books.html?=books_27"
+            "photo_index": "img/works_index/books_25.jpg",
+             "link": "portfolio_c_books.html?=books_25"
         }
     ],
+    
+    
     "books_28": [
         {
             "photo_1": "img/works/books/books_28/1.png",

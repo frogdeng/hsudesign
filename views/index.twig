@@ -6,15 +6,38 @@
 {% include '_template/_partial/top_menu_wh-bg.twig' %}
 
 
-<div class="header_wrapper">
+<div class="header_wrapper_mobile">
+	<img src="img/home_mobile.png" alt="">
+</div>
 
+<div class="header_wrapper">
 	<div class="header_body">
 		<div class="this_wrapper">
 				
-
-			</div>
 		</div>
 	</div>
+</div>
+
+<!-- !!! -->
+<div id="summer_camp-01" class="notice-popup3 mfp-hide">
+   		<div class="announce">
+   			<h6>【 網站維護中 】</h6>
+   			<p> 感謝您耐心等候。</p></div>
+    
+</div>
+ <script>
+    $(function(){
+		setTimeout(function() {
+			   $.magnificPopup.open({
+			    items: {
+			        src: '#summer_camp-01' 
+			    },
+			    type: 'inline'
+			      });
+		 }, 500);
+    });
+</script>
+<!-- !!! -->
 
 <!-- <div class="main_wrapper">
 
@@ -135,4 +158,4 @@
 
 
 
-{% endblock %}x
+{% endblock %}
